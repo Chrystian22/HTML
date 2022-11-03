@@ -13,4 +13,3 @@ function apostar(){
     document.getElementById("resultado").value=" ";
     document.getElementById("salida").value=" ";
   }
-  
