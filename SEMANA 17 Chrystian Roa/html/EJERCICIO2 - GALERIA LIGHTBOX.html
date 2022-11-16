@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/Lightbox.css">
+<script src="../js/Lightbox.js"></script>
+<body>
+
+<h2 style="text-align:center">**** VISOR DE IMÁGENES EN LIGHTBOX ****</h2>
+<br><br><br>
+<div class="row">
+  <div class="column">
+    <img src="../img/celular-Huawei-Y9 2019 4G azul.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <figcaption>Celular Huawei Y9</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/cel Xiaomi Mi10T 128GNegro.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <figcaption>Celular Xioami Mi10T</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/celular-huawei-y9A-128gb-negro.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <figcaption>Celular Huawei Y9A</figcaption>
+  </div>
+  <div class="column">
+    <img src="../img/cel motorola g20 128gb.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <figcaption>Celular Motorola G20</figcaption>
+  </div>
+  <!-- <div class="column">
+    <img src="../img/rana.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <figcaption>Rana</figcaption>
+  </div> -->
+</div>
+<!-- Seccion de enlaces a cada imagen en Vista modal Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="../img/celular-Huawei-Y9 2019 4G azul.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="../img/cel Xiaomi Mi10T 128GNegro.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="../img/celular-huawei-y9A-128gb-negro.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4 </div>
+      <img src="../img/cel motorola g20 128gb.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- Seccion de columnas de imágenes en miniatura -->
+
+    <div class="column">
+      <img class="demo cursor" src="../img/celular-Huawei-Y9 2019 4G azul.jpg" style="width:100%" onclick="currentSlide(1)" alt="Huawei-Y9 2019 4G azul">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/cel Xiaomi Mi10T 128GNegro.jpg" style="width:100%" onclick="currentSlide(2)" alt="Xiaomi Mi10T 128GNegro">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/celular-huawei-y9A-128gb-negro.jpg" style="width:100%" onclick="currentSlide(3)" alt="Huawei Y9A 128gb negro">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/cel motorola g20 128gb.jpg" style="width:100%" onclick="currentSlide(4)" alt="Motorola g20 128gb">
+    </div>
+</div>
+
+</body>
+</html>
